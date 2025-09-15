@@ -57,8 +57,8 @@ nav a:hover {
 
 /* ---------- Hero Section ---------- */
 .hero {
-  background: linear-gradient(135deg, #007BFF, #6A5ACD);
-  color: white;
+  background: linear-gradient(135deg, #d9dadc, #f1f1f1); /* Grey gradient like your photo */
+  color: #222; /* Dark text for contrast */
   padding: 100px 0;
   text-align: center;
 }
@@ -79,12 +79,12 @@ nav a:hover {
 }
 
 .hero .highlight {
-  color: #FFD700;
+  color: #007BFF; /* Blue accent for your name */
 }
 
 .btn {
-  background: white;
-  color: #007BFF;
+  background: #007BFF;
+  color: white;
   padding: 10px 25px;
   border-radius: 25px;
   text-decoration: none;
@@ -94,8 +94,8 @@ nav a:hover {
 
 .btn:hover {
   background: #0056b3;
-  color: white;
 }
+
 
 /* ---------- Section Basics ---------- */
 .section {
@@ -250,3 +250,4 @@ footer {
   color: #bbb;
   font-size: 0.9rem;
 }
+
