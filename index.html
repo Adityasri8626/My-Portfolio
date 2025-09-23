@@ -3,147 +3,313 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Aditya Srivastava | Data Analyst Portfolio</title>
+  <title>Aditya Srivastava | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container flex-header">
-      <div class="logo">
-        <h1>Aditya Srivastava</h1>
-      </div>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Aditya Srivastava</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <div class="social-icons">
-        <a href="https://github.com/Adityasri8626" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/aditya-srivastava8626" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://leetcode.com/your_leetcode_username" target="_blank"><i class="fas fa-code"></i></a>
-      </div>
+      
     </div>
   </header>
 
-  <section class="hero section-full">
-    <div class="container hero-inner">
-      <div class="hero-img">
-        <img src="aditya.jpg" alt="Aditya Srivastava">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-image">
+      <img src="aditya.jpg" alt="Aditya Srivastava">
+    </div>
+    <div class="hero-content">
+      <h1>Aditya Srivastava</h1>
+      <h2><span>Data Analyst</span></h2>
+      <p>
+        Passionate about uncovering insights from data and turning them into actionable strategies. 
+        Skilled in SQL, Power BI, Excel, R, and API integration. Experienced in developing 
+        interactive dashboards, identifying anomalies, and delivering impactful analytics.
+      </p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- CV / Resume -->
+  <section id="cv" class="cv section">
+    <div class="container">
+      <h2>Resume</h2>
+      <p class="section-subtitle">Preview my CV or download a copy.</p>
+      <div class="cv-preview">
+        <img src="cv-preview.jpg" alt="Aditya Srivastava CV Preview">
       </div>
-      <div class="hero-text">
-        <h2>Hello, I'm <span class="highlight">Aditya Srivastava</span></h2>
-        <p>Aspiring Data & Business Analyst with strength in Excel, SQL, Power BI, Python & R. Turning data into actionable insights.</p>
-        <a href="#projects" class="btn-primary">View My Work</a>
+      <div class="cv-actions">
+        <a class="btn" href="https://drive.google.com/uc?export=download&id=1hRErNGr1jrDmhbJDtk9W2X9dz6AkYCTP" target="_blank" rel="noopener">Download CV</a>
       </div>
     </div>
   </section>
 
+  <!-- About -->
   <section id="about" class="about section">
     <div class="container">
       <h2>About Me</h2>
-      <p>I’m a Bachelor of Computer Applications student at Lovely Professional University. I enjoy building dashboards, performing data cleaning & transformation, and analyzing large datasets to uncover insights.</p>
+      <p>
+        I’m a passionate and detail-oriented analytics enthusiast with hands-on experience in tools like Excel, SQL, Power BI, and Python. I thrive on transforming raw data into meaningful insights that help drive smarter decisions. My focus is on data storytelling, dashboard creation, and solving real-world business problems through data.
+      </p>
+      <p>
+        In addition, I am skilled in web development languages such as HTML and CSS, with experience in building responsive and user-friendly frontends. This enables me to effectively present data and analytics through well-designed dashboards and web applications.
+      </p>
     </div>
   </section>
 
+  <!-- Projects -->
   <section id="projects" class="projects section">
     <div class="container">
       <h2>Projects</h2>
-      <div class="grid-projects">
-        <div class="project-card">
-          <img src="projects/urban.png" alt="Urban Company Analytics">
-          <div class="project-info">
+      <div class="project-grid">
+        <div class="project-card" style="background-image: url('projects/urban.png');">
+          <div class="overlay">
             <h3>Urban Company Service Analytics</h3>
-            <p>Dashboard with SQL, Excel & Power BI for 8,500+ records.</p>
-            <a href="https://app.fabric.microsoft.com/links/23mrwh_FLO" target="_blank">View</a>
+            <div class="project-meta">
+              <div class="stack">
+                <span class="chip">SQL</span>
+                <span class="chip">Excel</span>
+                <span class="chip">Power BI</span>
+              </div>
+            </div>
+            <p class="project-desc">Analyzed 8,500+ records, built interactive KPIs, and identified city-wise profitability and cost drivers.</p>
+            <div class="project-links">
+              <a href="https://app.fabric.microsoft.com/links/23mrwh_FLO" target="_blank">View Dashboard</a>
+              <a href="https://github.com/Adityasri8626/Urban_Company-Analysis-" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <img src="projects/bizzpulse.png" alt="BizzPulse Auto Data Cleaner">
-          <div class="project-info">
+
+        <div class="project-card" style="background-image: url('projects/bizzpulse.png');">
+          <div class="overlay">
             <h3>BizzPulse – Auto Data Cleaner</h3>
-            <p>Streamlit app: CSV cleaning, normalization, outlier detection.</p>
-            <a href="https://bizpulse.streamlit.app/" target="_blank">Live</a>
+            <div class="project-meta">
+              <div class="stack">
+                <span class="chip">Python</span>
+                <span class="chip">Streamlit</span>
+                <span class="chip">Pandas</span>
+              </div>
+            </div>
+            <p class="project-desc">Automated CSV cleanup: processed nulls, outliers, type fixes, and normalization for analysis-ready datasets.</p>
+            <div class="project-links">
+              <a href="https://bizpulse.streamlit.app/" target="_blank">Live App</a>
+              <a href="https://github.com/Adityasri8626/BizPulse-Auto-Data-Cleaner" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
         </div>
-        <div class="project-card">
-          <img src="projects/zomato.png" alt="Zomato Analysis">
-          <div class="project-info">
-            <h3>Zomato India Restaurant Analysis</h3>
-            <p>9,000+ records with R & ggplot2, revealing service and delivery gaps.</p>
-            <a href="https://rpubs.com/Adityasri8626/1302988" target="_blank">Report</a>
+
+        <div class="project-card" style="background-image: url('projects/zomato.png');">
+          <div class="overlay">
+            <h3>Zomato India Restaurant Data Analysis</h3>
+            <div class="project-meta">
+              <div class="stack">
+                <span class="chip">R</span>
+                <span class="chip">ggplot2</span>
+                <span class="chip">dplyr</span>
+              </div>
+            </div>
+            <p class="project-desc">Analyzed 9,000+ restaurants; identified high-value, low-cost segments and city-level trends.</p>
+            <div class="project-links">
+              <a href="https://rpubs.com/Adityasri8626/1302988" target="_blank">Read Report</a>
+              <a href="https://github.com/Adityasri8626/Zomato-India-Restaurant-Data-Analysis" target="_blank" rel="noopener">GitHub</a>
+            </div>
           </div>
         </div>
-        <!-- Add more as needed -->
+
+        <div class="project-card" style="background-image: url('projects/phonepe.png');">
+          <div class="overlay">
+            <h3>PhonePe UPI Payments Analysis</h3>
+            <div class="project-meta">
+              <div class="stack">
+                <span class="chip">SQL</span>
+                <span class="chip">Power BI</span>
+              </div>
+            </div>
+            <p class="project-desc">Built dashboards to analyze UPI trends by state/district; highlighted P2P vs merchant patterns.</p>
+            <div class="project-links">
+              <a href="https://app.fabric.microsoft.com/links/9eDVAFM2KB" target="_blank">View Dashboard</a>
+              <a href="https://github.com/Adityasri8626/Phone-Pe-Data-Analysis-" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card" style="background-image: url('projects/intelliwear.png');">
+          <div class="overlay">
+            <h3>IntelliWear – AI Fashion E-Commerce</h3>
+            <div class="project-meta">
+              <div class="stack">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+              </div>
+            </div>
+            <p class="project-desc">Designing a responsive storefront and checkout flow. Recommendation module in progress.</p>
+            <div class="project-links">
+              <span class="badge-status">Under Processing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top: 24px;">
+        <a class="btn" href="https://github.com/Adityasri8626" target="_blank" rel="noopener">View all projects on GitHub</a>
       </div>
     </div>
   </section>
 
+  <!-- Skills -->
   <section id="skills" class="skills section">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-list">
-        <span>Excel / Google Sheets</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Python (Pandas, NumPy, Streamlit)</span>
-        <span>R (ggplot2, dplyr)</span>
-        <span>Data Cleaning</span>
-        <span>Data Modeling</span>
-        <span>HTML & CSS</span>
-        <span>Git & GitHub</span>
-      </div>
+      <ul class="skills-list">
+        <li>Excel / Google Sheets</li>
+        <li>SQL</li>
+        <li>Power BI (Dashboards, DAX, Power Query)</li>
+        <li>Python (Pandas, NumPy, Streamlit)</li>
+        <li>R (ggplot2, dplyr)</li>
+        <li>Data Cleaning & Transformation</li>
+        <li>Data Modeling</li>
+        <li>Data Validation</li>
+        <li>KPI Visualization</li>
+        <li>Custom Visualizations</li>
+        <li>HTML & CSS</li>
+        <li>Git & GitHub</li>
+        <li>Prompt Engineering</li>
+        <li>GitHub Copilot</li>
+        <li>ChatGPT</li>
+        <li>AI-assisted Development & Design</li>
+      </ul>
     </div>
   </section>
 
+  <!-- Certifications -->
   <section id="certifications" class="certifications section">
     <div class="container">
       <h2>Certifications</h2>
-      <div class="grid-certs">
+      <div class="cert-grid">
         <div class="cert-card">
-          <img src="certs/deloitte.png" alt="Certificate Deloitte">
-          <div class="cert-info">
-            <h3>Deloitte Data Analytics Job Simulation</h3>
-            <a href="CERTIFICATE_LINK" target="_blank">View</a>
-          </div>
+          <img src="GOOGLE.PNG" alt="Google Analytics Certification">
+          <h3>Google Analytics Certification</h3>
+          <a href="https://skillshop.credential.net/d6ac00f9-b779-44c7-94c5-3a176dd4af13#acc.phltdJ3W" target="_blank" rel="noopener">View Certificate</a>
         </div>
         <div class="cert-card">
-          <img src="certs/infosys.png" alt="Infosys Certificate">
-          <div class="cert-info">
-            <h3>Infosys Springboard – Data Analytics in R</h3>
-          </div>
+          <img src="DELOITTE.png" alt="Deloitte Job Simulation">
+          <h3>Deloitte Data Analytics Job Simulation</h3>
+          <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_M9nDgJSpPFA3zPNdF_1749660181076_completion_certificate.pdf" target="_blank">View Certificate</a>
         </div>
-        <!-- more certs -->
+        <div class="cert-card">
+          <img src="R.png" alt="Infosys Springboard – Data Analytics using R">
+          <h3>Infosys Springboard – Data Analytics using R</h3>
+          <a href="https://www.coursera.org/account/accomplishments/verify/2XLYZTVAUSH8" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="ONE.png" alt="One Roadmap – Data Analyst Career Training">
+          <h3>One Roadmap – Data Analyst Career Training</h3>
+          <a href="https://oneroadmap.io/skills/da/certificate/CERT-DB9CF69F" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="SQL.png" alt="LinkedIn Learning – SQL for Data Analysis">
+          <h3>LinkedIn Learning – SQL for Data Analysis</h3>
+          <a href="https://drive.google.com/file/d/1Fz3sTL4srl5ihbvWvIN2NqXtdztH9TIF/view?usp=sharing" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="PYTHON.png" alt="LinkedIn Learning – Python for Data Analysis">
+          <h3>LinkedIn Learning – Python for Data Analysis</h3>
+          <a href="https://drive.google.com/file/d/1nraXJ4reXuPbcZ0E9_V2LtZFddDo2lqH/view?usp=sharing" target="_blank" rel="noopener">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <img src="HTML.png" alt="LinkedIn Learning – HTML Essential Training">
+          <h3>LinkedIn Learning – HTML Essential Training</h3>
+          <a href="https://drive.google.com/file/d/1DF8pzQejPJSFDzZvVZdpDd05QalMzakr/view?usp=sharing" target="_blank" rel="noopener">View Certificate</a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Publications -->
+  <section id="publications" class="publications section">
+    <div class="container">
+      <h2>Publications</h2>
+      <p class="section-subtitle">Some of my published Articles, Blogs and Research.</p>
+      <!-- Add your publication cards/links here -->
+    </div>
+  </section>
+
+  
+
+  <!-- Contact -->
   <section id="contact" class="contact section">
     <div class="container">
-      <h2>Contact</h2>
-      <div class="contact-inner">
-        <div class="contact-info">
-          <p>Email: <a href="mailto:adityasri8626@gmail.com">adityasri8626@gmail.com</a></p>
-          <p>LinkedIn: <a href="https://linkedin.com/in/aditya-srivastava8626" target="_blank">linkedin.com/in/aditya-srivastava8626</a></p>
-          <p>GitHub: <a href="https://github.com/Adityasri8626" target="_blank">github.com/Adityasri8626</a></p>
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:adityasri8626@gmail.com">adityasri8626@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/aditya-srivastava8626" target="_blank">linkedin.com/in/aditya-srivastava8626</a></p>
+      <p>GitHub: <a href="https://github.com/Adityasri8626" target="_blank">github.com/Adityasri8626</a></p>
+
+      <!-- Contact Form (EmailJS) -->
+      <form id="contactForm" class="contact-form">
+        <div class="form-row">
+          <input type="text" name="from_name" placeholder="Your Name" required>
+          <input type="email" name="reply_to" placeholder="Your Email" required>
         </div>
-        <div class="contact-form">
-          <iframe src="YOUR_GOOGLE_FORM_LINK" width="100%" height="400" frameborder="0">Loading…</iframe>
-        </div>
-      </div>
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formStatus" class="form-status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
-  <footer class="site-footer">
+  <!-- Footer -->
+  <footer>
     <div class="container">
       <p>&copy; 2025 Aditya Srivastava. All rights reserved.</p>
     </div>
   </footer>
 
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init('6ngYMBEgkmRGIUnQD');
+    })();
+
+    const contactForm = document.getElementById('contactForm');
+    const formStatus = document.getElementById('formStatus');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        formStatus.textContent = 'Sending...';
+
+        const formData = {
+          from_name: this.from_name.value,
+          reply_to: this.reply_to.value,
+          message: this.message.value
+        };
+
+        emailjs.send('service_2gsdo2f', 'template_o6d7z2e', formData)
+          .then(function() {
+            formStatus.textContent = 'Thanks! Your message has been sent.';
+            contactForm.reset();
+          }, function(error) {
+            formStatus.textContent = 'Sorry, something went wrong. Please try again later.';
+            console.error('EmailJS error:', error);
+          });
+      });
+    }
+
+    // (Test sender removed after verification)
+  </script>
 </body>
 </html>
 
